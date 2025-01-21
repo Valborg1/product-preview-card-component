@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  max-width: 600px;
+  height: 450px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: flex-start;
+  padding: 20px;
+  text-align: left;
+}
+
+.text-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-family: Fraunces;
+  font-weight: 700;
+  line-height: 95%;
+}
+
+.text-section h2 {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  font-family: Montserrat;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.text-section p {
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-family: Montserrat;
+  font-weight: 500;
+}
+
+.text-section .discounted-price {
+  font-family: Fraunces;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.text-section .original-price {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 0.75rem;
+  text-decoration: line-through;
+}
+
+.text-section button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: hsl(158, 36%, 37%)#007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.text-section button:hover {
+  background-color: hsl(158, 36%, 37%);
+}
+
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="image-section">
+      <img src="./images/image-product-desktop.jpg" alt="Sample Image">
+    </div>
+    <div class="text-section">
+      <h2>Perfume</h2>
+      <h1>Gabrielle Essence Eau De Parfum</h1>
+      <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+        Perfumer-Creator for the House of CHANEL.</p>
+      <p class="discounted-price">$149.99<span class="original-price">169.99</span></p>
+      <button>Buy Now</button>
+    </div>
+  </div>
+</body>
+</html>
+
+<!-- 
+Perfume
+
+Gabrielle Essence Eau De Parfum
+
+A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+Perfumer-Creator for the House of CHANEL.
+
+$149.99
+$169.99
+
+Add to Cart
+-->
