@@ -21,18 +21,64 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  background-color: hsl(30, 38%, 92%);
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: hsl(30, 38%, 92%);
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px; 
+  overflow: hidden; 
+  background-color: white; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  max-width: 600px; 
+}
 
+.container > div {
+  flex: 1;
+  max-width: 300px;
+  height: 400px;
 
+}
 
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
 
+.text-section {
+  padding: 20px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.discounted-price {
+  font-size: 2rem;
+  margin-right: 20px;
+}
+
+button {
+  padding: 8px;
+  width: 45%;
+  align-self: center;
+}
 
   </style>
 </head>
@@ -46,7 +92,7 @@ body {
       <h1>Gabrielle Essence Eau De Parfum</h1>
       <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
         Perfumer-Creator for the House of CHANEL.</p>
-      <p>
+      <p class="price">
         <span class="discounted-price">$149.99</span>
         <span class="original-price">169.99</span>
       </p>
